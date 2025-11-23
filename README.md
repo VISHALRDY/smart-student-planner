@@ -1,53 +1,78 @@
-# Smart Student Planner
+# Smart Student Planner 📚
 
-A cloud-based full-stack student productivity web application to manage academic tasks, assignments, due dates, and priorities — built using **Node.js**, **Express**, **MongoDB Atlas**, and **Vanilla JavaScript** with deployments on **Render** and **Netlify**.
+A full-stack **study planner web app** that lets students manage their tasks with priorities, due dates, and completion status — backed by **Node.js + Express + MongoDB Atlas** and a clean **HTML/CSS/JS** frontend.
 
 ---
 
-## 🌐 Live Application Links
+## 🌍 Live Demo
 
-| Component | URL |
-|----------|-----|
-| **Frontend (Netlify)** | https://smart-student-planner.netlify.app |
-| **Backend API (Render)** | https://smart-student-planner.onrender.com/api/tasks |
-| **GitHub Repository** | https://github.com/VISHALRDY/smart-student-planner |
+- **Frontend (Netlify)**: https://smart-student-planner.netlify.app  
+- **Backend API (Render)**: https://smart-student-planner.onrender.com/api/tasks  
+
+> If the backend is asleep (Render free tier), the first request may take a few seconds to wake up.
 
 ---
 
 ## ✨ Features
 
-- ✔ Add new tasks (Subject, Title, Due Date, Priority)
-- ✔ Update task status (`PENDING → COMPLETED`)
-- ✔ Delete tasks
-- ✔ Real-time updates without page reload
-- ✔ Filters: **All / Pending / Completed / High Priority**
-- ✔ Persistent cloud database using MongoDB Atlas
-- ✔ Fully deployed full-stack architecture
+- ➕ Add tasks with:
+  - Subject
+  - Title
+  - Due date
+  - Priority (Low / Medium / High)
+- ✅ Mark tasks as **Completed**
+- 🗑 Delete tasks
+- 🔍 Filter by:
+  - All
+  - Pending
+  - Completed
+  - High Priority
+- ☁ Data stored in **MongoDB Atlas** (Cloud NoSQL)
+- 🌐 Fully deployed:
+  - Backend on **Render**
+  - Frontend on **Netlify**
 
 ---
 
-## 🧰 Tech Stack
+## 🛠 Tech Stack
 
-### **Frontend**
-- HTML5, CSS3, Vanilla JavaScript
-- Fetch API for REST calls
+### Frontend
+- **HTML5**
+- **CSS3**
+- **Vanilla JavaScript (ES6)**  
+  - `fetch()` for API calls  
+  - DOM manipulation
 
-### **Backend**
-- Node.js
-- Express.js
-- CORS
-- Mongoose (MongoDB ODM)
+### Backend
+- **Node.js**
+- **Express.js**
+- **CORS**
+- **Mongoose** (MongoDB ODM)
 
-### **Database**
-- MongoDB Atlas (Cloud NoSQL)
+### Database
+- **MongoDB Atlas** (Cloud NoSQL)
 
-### **Deployment**
-| Platform | Usage |
-|----------|-------|
-| Render | Backend API hosting |
+### Deployment
+| Platform | Usage                |
+|----------|----------------------|
+| Render   | Backend API hosting  |
 | Netlify | Frontend static hosting |
 
 ---
 
-## 📂 Folder Structure
+## 📁 Folder Structure
 
+```bash
+smart-student-planner/
+├── backend/
+│   ├── server.js         # Express server + API routes + MongoDB connection
+│   ├── package.json      # Backend dependencies & scripts
+│   └── ...               # (any future backend files)
+│
+├── frontend/
+│   ├── index.html        # Main UI
+│   ├── main.js           # Frontend logic & API calls
+│   └── styles.css        # Styling
+│
+├── README.md
+└── .gitignore
