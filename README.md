@@ -1,66 +1,53 @@
 # Smart Student Planner
 
-A simple full-stack study planner for students to track assignments, due dates, and priorities — built with **Node.js**, **Express**, **MongoDB Atlas**, and a clean **HTML/CSS/JavaScript** frontend.
+A cloud-based full-stack student productivity web application to manage academic tasks, assignments, due dates, and priorities — built using **Node.js**, **Express**, **MongoDB Atlas**, and **Vanilla JavaScript** with deployments on **Render** and **Netlify**.
 
-- **Frontend (live):** https://smart-student-planner.netlify.app  
-- **Backend API (live):** https://smart-student-planner.onrender.com/api/tasks  
+---
+
+## 🌐 Live Application Links
+
+| Component | URL |
+|----------|-----|
+| **Frontend (Netlify)** | https://smart-student-planner.netlify.app |
+| **Backend API (Render)** | https://smart-student-planner.onrender.com/api/tasks |
+| **GitHub Repository** | https://github.com/VISHALRDY/smart-student-planner |
 
 ---
 
 ## ✨ Features
 
-- ➕ **Add tasks** with:
-  - Subject (e.g. *OS, DS, AI*)
-  - Task title (e.g. *Assignment 1, Lab 3*)
-  - Due date
-  - Priority: `LOW`, `MEDIUM`, `HIGH`
-- ✅ **Mark tasks as completed**
-- 🗑️ **Delete tasks**
-- 🔍 **Filter by:**
-  - `All`
-  - `Pending`
-  - `Completed`
-  - `High Priority`
-- 💾 **Persistent storage** with MongoDB Atlas (cloud database)
-- 🌐 **Deployed frontend & backend**
-  - Frontend: Netlify
-  - Backend: Render
+- ✔ Add new tasks (Subject, Title, Due Date, Priority)
+- ✔ Update task status (`PENDING → COMPLETED`)
+- ✔ Delete tasks
+- ✔ Real-time updates without page reload
+- ✔ Filters: **All / Pending / Completed / High Priority**
+- ✔ Persistent cloud database using MongoDB Atlas
+- ✔ Fully deployed full-stack architecture
 
 ---
 
-## 🧱 Tech Stack
+## 🧰 Tech Stack
 
-**Frontend**
-
+### **Frontend**
 - HTML5, CSS3, Vanilla JavaScript
-- Fetch API to call backend REST APIs
+- Fetch API for REST calls
 
-**Backend**
-
+### **Backend**
 - Node.js
 - Express.js
 - CORS
 - Mongoose (MongoDB ODM)
 
-**Database**
+### **Database**
+- MongoDB Atlas (Cloud NoSQL)
 
-- MongoDB Atlas (hosted in the cloud)
-
-**Deployment**
-
-- Backend: Render (Node web service)
-- Frontend: Netlify (static site)
+### **Deployment**
+| Platform | Usage |
+|----------|-------|
+| Render | Backend API hosting |
+| Netlify | Frontend static hosting |
 
 ---
 
-## 📁 Project Structure
+## 📂 Folder Structure
 
-```bash
-smart-student-planner/
-├── server.js              # Express server, routes, MongoDB connection
-├── package.json           # Node dependencies & scripts
-├── frontend/
-│   ├── index.html         # Main UI
-│   ├── style.css          # Styling
-│   └── main.js            # Frontend logic, API calls, filters
-└── README.md
